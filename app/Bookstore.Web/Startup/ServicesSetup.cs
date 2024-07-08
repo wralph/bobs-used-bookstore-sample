@@ -49,10 +49,10 @@ namespace Bookstore.Web.Startup
             // the secret.
             const string DbSecretsParameterName = "dbsecretsname";
 
-            var connString = configuration.GetConnectionString("BookstoreDbDefaultConnection");
+            var connString = configuration.GetConnectionString("sqlserver"); // docker, spun up by Aspire
             if (!string.IsNullOrEmpty(connString))
             {
-                Console.WriteLine("Using localdb connection string");
+                Console.WriteLine("Using connection string for docker container");
                 return connString;
             }
 

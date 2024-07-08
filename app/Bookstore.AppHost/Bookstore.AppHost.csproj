@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>c0eb327f-5974-451f-b526-d740d9184db3</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.2" />
+    <PackageReference Include="Aspire.Hosting.SqlServer" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bookstore.Web\Bookstore.Web.csproj" />
+    <ProjectReference Include="..\Bookstore.Domain\Bookstore.Domain.csproj" />
+    <ProjectReference Include="..\Bookstore.Data\Bookstore.Data.csproj" />
+  </ItemGroup>
+
+</Project>

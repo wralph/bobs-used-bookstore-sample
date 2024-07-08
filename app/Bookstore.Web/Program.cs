@@ -1,8 +1,11 @@
 using Microsoft.AspNetCore.Builder;
-
 using Bookstore.Web.Startup;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.AddServiceDefaults();
+
+builder.AddSqlServerClient("Bookstore");
 
 builder.ConfigureConfiguration();
 

@@ -5,9 +5,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AWSSDK.Rekognition" Version="3.7.104.37" />
-        <PackageReference Include="AWSSDK.S3" Version="3.7.103.42" />
-        <PackageReference Include="AWSSDK.SecretsManager" Version="3.7.102.21" />
+        <PackageReference Include="AWSSDK.Core" Version="3.7.304.25" />
+        <PackageReference Include="AWSSDK.Rekognition" Version="3.5.0" />
+        <PackageReference Include="AWSSDK.S3" Version="3.7.310.2" />
+        <PackageReference Include="AWSSDK.SecretsManager" Version="3.7.304.10" />
         <PackageReference Include="Magick.NET-Q8-AnyCPU" Version="13.3.0" />
         <PackageReference Include="Microsoft.Build" Version="17.5.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0-preview.3.23174.2" />
@@ -20,14 +21,15 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
-        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
         <PackageReference Include="System.Linq.Expressions" Version="4.3.0" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Bookstore.Domain\Bookstore.Domain.csproj" />
+      <!-- <ProjectReference Include="..\Bookstore.ServiceDefaults\Bookstore.ServiceDefaults.csproj" /> -->
     </ItemGroup>
 
 </Project>
