@@ -9,7 +9,7 @@
         <PackageReference Include="AWSSDK.Rekognition" Version="3.5.0" />
         <PackageReference Include="AWSSDK.S3" Version="3.7.310.2" />
         <PackageReference Include="AWSSDK.SecretsManager" Version="3.7.304.10" />
-        <PackageReference Include="Magick.NET-Q8-AnyCPU" Version="13.3.0" />
+        <PackageReference Include="Magick.NET-Q8-AnyCPU" Version="13.9.1" />
         <PackageReference Include="Microsoft.Build" Version="17.5.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0-preview.3.23174.2" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0-preview.3.23174.2">
