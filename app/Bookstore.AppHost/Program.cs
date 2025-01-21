@@ -4,7 +4,7 @@ var builder = DistributedApplication.CreateBuilder(args);
 
 var booksDb = builder.AddSqlServer("BookstoreDbDefaultConnection");
 
-builder.AddProject<Projects.Bookstore_Web>("web")
+builder.AddProject("web", "../Bookstore.Web/Bookstore.Web.csproj")
     .WithReference(booksDb);
 
 builder.Build().Run();
