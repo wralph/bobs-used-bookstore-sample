@@ -1,6 +1,6 @@
 using Aspire.Hosting;
 
-var builder = DistributedApplicationBuilder.CreateBuilder(args);
+var builder = DistributedApplication.CreateBuilder(args);
 
 var booksDb = builder.AddSqlServer("BookstoreDbDefaultConnection");
 
