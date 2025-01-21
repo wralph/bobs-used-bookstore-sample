@@ -1,4 +1,5 @@
 using Aspire.Hosting;
+using Aspire.Hosting.Distributed;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
