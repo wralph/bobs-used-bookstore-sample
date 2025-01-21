@@ -1,5 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
@@ -8,16 +8,13 @@
     <IsAspireHost>true</IsAspireHost>
     <UserSecretsId>c0eb327f-5974-451f-b526-d740d9184db3</UserSecretsId>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.2" />
-    <PackageReference Include="Aspire.Hosting.SqlServer" Version="8.0.2" />
-  </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Bookstore.Web\Bookstore.Web.csproj" />
     <ProjectReference Include="..\Bookstore.Domain\Bookstore.Domain.csproj" />
     <ProjectReference Include="..\Bookstore.Data\Bookstore.Data.csproj" />
   </ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.2" />
+    <PackageReference Include="Aspire.Hosting.SqlServer" Version="8.2.2" />
+  </ItemGroup>
 </Project>
