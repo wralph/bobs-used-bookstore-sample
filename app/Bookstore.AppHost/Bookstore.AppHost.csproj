@@ -13,9 +13,8 @@
     <ProjectReference Include="..\Bookstore.Data\Bookstore.Data.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
-    <PackageReference Include="Aspire.Hosting" Version="8.2.2" />
-    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.2" />
-    <PackageReference Include="Aspire.Hosting.SqlServer" Version="8.2.2" />
+    <PackageReference Include="Aspire.Hosting" Version="9.0.0" />
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.0.0" />
+    <PackageReference Include="Aspire.Hosting.SqlServer" Version="9.0.0" />
   </ItemGroup>
 </Project>
