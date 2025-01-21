@@ -1,10 +1,10 @@
 using Aspire.Hosting;
-using var builder = DistributedApplication.CreateBuilder(args);
 
-var booksDb = builder.AddSqlServer("BookstoreDbDefaultConnection")
-    .AddDatabase("BookstoreDb");
+var builder = DistributedApplication.CreateBuilder(args);
 
-var web = builder.AddProject("web", "../Bookstore.Web/Bookstore.Web.csproj")
+var booksDb = builder.AddSqlServer("BookstoreDbDefaultConnection");
+
+builder.AddProject("web", "../Bookstore.Web/Bookstore.Web.csproj")
     .WithReference(booksDb);
 
-await builder.BuildAsync();
+await builder.Build().RunAsync();
